@@ -1,0 +1,9 @@
+sudo: false
+
+language: java
+
+before_install:
+
+script:
+  - wget --quiet https://s3.amazonaws.com/public.ionchannel.io/files/scripts/travis_analyze_project.sh; chmod +x travis_analyze_project.sh; ./travis_analyze_project.sh
+  - mvn package
