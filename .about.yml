@@ -27,7 +27,7 @@ owner_type: project
 
 # What is your project's current status? (required)
 # values: discovery, alpha, beta, live
-stage: alpha
+stage: live
 
 # Should this repo have automated tests? If so, set to `true`. (required)
 # values: true, false
