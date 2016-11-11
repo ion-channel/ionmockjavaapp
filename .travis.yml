@@ -3,10 +3,11 @@ sudo: false
 language: java
 
 before_script:
-  - wget --quiet https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_386.zip
-  - unzip pup_v0.4.0_linux_386.zip
-  - cp pup ~
-  - export PATH=$PATH:~/pup
+  - wget --quiet https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_386.zip -O /tmp/pup.zip
+  - tar -xf /tmp/pup.zip
+  - export PATH=$PATH:~/tmp/
+  - export PATH=$PATH:$PWD/pup
+
   - curl -s https://s3.amazonaws.com/public.ionchannel.io/files/scripts/travis_analyze_project.sh | bash
   - cat analysis_id.txt
 
