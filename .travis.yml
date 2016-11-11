@@ -4,7 +4,7 @@ language: java
 
 before_script:
   - wget --quiet https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_386.zip
-  - tar -xf pup_v0.4.0_linux_386.zip
+  - unzip -xf pup_v0.4.0_linux_386.zip
   - cp pup /tmp/pup
   - export PATH=$PATH:/tmp/
   - export PATH=$PATH:$PWD/pup
