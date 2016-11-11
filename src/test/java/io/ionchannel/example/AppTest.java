@@ -29,35 +29,6 @@ public class AppTest
     }
 
 
-    public void testOne(){
-        App myApp = new App();
-        assertTrue(myApp.return_one() == 1);
-    }
-
-
-    public void testTwo(){
-        App myApp = new App();
-        assertTrue(myApp.return_two() == 2);
-    }
-
-
-    public void testThree(){
-        App myApp = new App();
-        assertTrue(myApp.return_three() == 3);
-    }
-
-
-    public void testFour(){
-        App myApp = new App();
-        assertTrue(myApp.return_four() == 4);
-    }
-
-
-    public void testFive(){
-        App myApp = new App();
-        assertTrue(myApp.return_five() == 5);
-    }
-
 
     public void testSix(){
         App myApp = new App();
