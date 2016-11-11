@@ -9,7 +9,6 @@ before_script:
   - cp pup /tmp/pup
   - export PATH=$PATH:/tmp/
   - export PATH=$PATH:$PWD/pup
-
   - curl -s https://s3.amazonaws.com/public.ionchannel.io/files/scripts/travis_analyze_project.sh | bash
   - cat analysis_id.txt
 
