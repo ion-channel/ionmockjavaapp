@@ -2,15 +2,12 @@ sudo: false
 
 language: java
 
-go:
-  - 1.3
-  - master
-
 before_install:
 
 install:
+  - brew install go
   - go get github.com/ericchiang/pup
-  
+
 before_script:
   - curl -s https://s3.amazonaws.com/public.ionchannel.io/files/scripts/travis_analyze_project.sh | bash
   - cat analysis_id.txt
